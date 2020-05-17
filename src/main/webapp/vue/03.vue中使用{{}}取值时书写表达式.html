@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue的第一个入门案例</title>
+    <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <div id="app" class="aa">
+        <h3>{{msg.toUpperCase()}}</h3>
+        <h3>{{msg+'!!'}}</h3>
+    </div>
+    <script>
+        const app= new Vue({
+            el:".aa",//用来给vue实例定义一个作用范围
+            data:{ //用来给Vue实例定义一些相关数据
+                msg:"hello Vue",
+            }
+        });
+    </script>
+</body>
+</html>
